@@ -1,0 +1,44 @@
+
+
+/*  */
+
+body{background-color: gold;}
+
+#titular{color:BlueViolet;font-size: 100px;}
+
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+h2 {
+  color:blue
+  text-align center;
+}
+p {
+  color: blue;
+  text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: inline-end;
+    color: blue
+  }
+  
+  li a {
+    display: table-footer-group;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: solid blue;
+  }
+  marquee {color: blue }
+  footer {
+    border: 7px solid blue;}
