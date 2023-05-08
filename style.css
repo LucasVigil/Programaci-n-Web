@@ -1,11 +1,26 @@
 
-
-/*  */
-
 body{background-color: gold;}
 
 #titular{color:BlueViolet;font-size: 100px;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+ }
+ ol{
+  display: left;
+ }
 
+ li a {
+
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ }
 
 h1 {
   color: blue;
@@ -13,32 +28,85 @@ h1 {
 }
 h2 {
   color:blue
-  text-align center;
+  text-align left;
 }
 p {
   color: blue;
   text-align: center;
 }
-ul {
+  
+  li {
+    float: inline;
+    color: blue
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+     color: blue;
+     font-size: 8vw;
+    }   
+
+a{
+  width: 100%;
+}
+
+    li a {
+      display: table-footer-group;
+      color: gold;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: solid blue;
+    }
+  marquee {color: blue }
+  nav {
+    
+    background-color: gold;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    display: flex;
   }
   
   li {
-    float: inline-end;
-    color: blue
+    margin: 1vw;
   }
   
-  li a {
-    display: table-footer-group;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: solid blue;
+  a {
+    color: #ee0a0a;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: bold;
   }
-  marquee {color: blue }
+
+  .fotos2{
+    height: 20vw;
+    width: 20vw;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    
+}
+.p3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  font-size: 1.5vw;
+  border: 0.25vw solid blue;
+  background-color:gold;
+  padding: 0,5vw;
+}
+
+  
   footer {
     border: 7px solid blue;}
+    
