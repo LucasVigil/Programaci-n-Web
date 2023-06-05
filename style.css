@@ -1,113 +1,123 @@
 
-body{background-color: gold;}
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.Titulo {
+  background-image: url(images/Fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 200px 0;
+}
 
-.menu{
-  list-style-type: none;
-  width: screen;
-  overflow: hidden;
-  background-color: blue;
+.Titulo h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.services-section img,
+.contact-info img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.service-item {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.service-item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
+.services-section {
+  background-color: rgb(8, 8, 8);
+  padding: 60px 0;
   display: flex;
-  padding: 0 4px;
-  margin: 1vw;   
-  padding: 25px;
-  height: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+.services-section p {
+  font-family: "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.services-section h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  background-color: rgba(22, 22, 22, 0.379);
+  }
+
+
+.services-section h2,
+.contact-section h2 {
+  width: 100%;
+  text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.services-section ul {
   list-style: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  padding-left: 0;
 }
-nav ul li {
-  list-style-type: none;
-  padding: 10px ;
-  display: flex;
-  }
-nav ul li a{
-  text-decoration:dotted;
-  size: 18px;
-  color: gold;
-  font-size: 2vw;
+.services-section h2,
+.services-section p {
+  color: #fff;
+}
+
+.services-section li {
+  margin-bottom: 22px;
+}
+
+.contact-info {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.contact-info h2 {
+  color: #333;
   font-weight: bold;
- }
-@media  (max-width: 997px){
-  .menu{
-    padding: 14px 2%;
-    transition: .2s;
-  }
-  .nav ul li a{
-    padding: 5px 0;
-    margin: 0px 20px;
-  }
+  margin-bottom: 30px;
 }
 
-.dalebo{
-  display: left;
-  float: inline;
-  color: blue
- }
-
-
-
-h2 {
-  color:blue
-  text-align left;
-}
-.p4 {
-  color: blue;
-  text-align: center;
-}
-  
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-family: 'Times New Roman', Times, serif;
-  color: blue;
-  font-size: 8vw;
-  text-align: center;
-  }   
-
-
-
-marquee {color: blue }
-  
-
-
-
-
-
-table{display: flex ;
-  justify-content: left;
-  align-items: Left;
-
-  ;
-
-} 
-
-
-
-
-  .fotos2{
-    height: 20vw;
-    width: 20vw;
-  }
-  .contenedor{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    
-}
-.p3 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: blue;
-  font-size: 1.5vw;
-  border: 0.25vw solid blue;
-  background-color:gold;
-  padding: 0,5vw;
+.contact-info ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-  
-  footer {
-    border: 7px solid blue;}
-    
+.contact-info li {
+  margin-bottom: 10px;
+}
+.footer .client-logos img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+.footer .contact-info {
+  background-color: #fff;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333;
+}

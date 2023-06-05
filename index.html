@@ -1,68 +1,107 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página de Boquita</title>
-    <link rel="stylesheet" href="style.css"> 
+  <title>Tango Consulting Group</title> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<nav>
-  <ul class="menu"width = device width>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Copas</a></li>
-    <li><a href="#">Contacto</a></li>
-    <li><a href="#">Los mejores con la nuestra</a></li>
-  </ul>
-</nav>
-
 <body>
-    <header>
-        <h1>Boca Juniors</h1>
-       <img src="./images/Bocaaaaa.jpg" alt="Foto de la bombonera" width="50%" > 
-       <img src="./images/Messiconroman.jpg" alt="Foto de messi con roman" width="49%" > 
-       <img src="./images/bombonerita.png" alt="Foto de la cancha" width="99%" > 
-        <marquee behavior="" direction="right">AGUANTE BOCA </marquee>
-    </header>            
-    <main>
-    <div class="dalebo">
-        <ol type="" start="1">
-            <h2>Años notables de boquita</h2>
-            <li>Boca 2000  <a href="https://es.wikipedia.org/wiki/Anexo:Temporada_2000-01_del_Club_Atl%C3%A9tico_Boca_Juniors"Target="_blank"><input type="button" value="Ver"   ></a></li>
-            <li>Boca 2001 <a href="https://es.wikipedia.org/wiki/Anexo:Temporada_2001-02_del_Club_Atl%C3%A9tico_Boca_Juniors"Target="_blank"><input type="button" value="Ver" ></a></li>
-            <li>Boca 2002 <a href="https://es.wikipedia.org/wiki/Anexo:Temporada_2002-03_del_Club_Atl%C3%A9tico_Boca_Juniors"Target="_blank"><input type="button" value="Ver" ></a></li>
-        </ol>
-   </div>
-
-    <table border="7px"> 
-        <tr><th>MEJORES JUGADORES</th></tr>
-        <tr><td>Juan Roman</td><td>Riquelme</td></tr>
-        <tr><td>Diego Armando</td><td>Maradona</td></tr>
-        <tr><td>Martin</td><td>Palermo</td></tr>
-        <tr><td>Carlitos</td><td>Tevez</td></tr>
-        <tr><td>Carlos</td><td>Bianchi</td></tr>
-        <form action="" method="post">        
-    </table>
   
-    <div class="contenedor">
-        <img class="fotos2" src="./images/JRRvsRM.jpg" class="d-block w-100" alt="Tapa Revolver">
-        <img class="fotos2" src="./images/PalermoRM.jpg" class="d-block w-100" alt="Tapa Sgt.Pepper">
-        <img class="fotos2" src="./images/BianchiRM.jpg" class= "d-block w-100" alt="Tapa Hard day's night">      
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tango Consulting Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a> <!-- Buscar como hacer que el nav link me lleve a los servicios??-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Clientes</a>
+          </li>
+        </ul>
+      </div>
     </div>
- 
-    <p class="p3">Estos son algunos de los maximos idolos del club.</p>
-</main>
-<footer>
-    <p class="p4">SI DESEA INGRESAR A SU CUENTA INDIQUE SU NOMBRE DE USUARIO Y SU CONTRASEÑA</p>
-    <label for="user">Nombre de usuario:
-        <input type="text" placeholder="ingrese usuario" name="user"></label> <br>
-        <label for="contrasenia"> Contraseña:
-        <input type="password" placeholder="ingrese contraseña"></label><br>
-        <input type="submit" value="Iniciar sesión">        
-        <a href="https://www.bocajuniors.com.ar/"Target="_blank"><input type="button" value=" PAGINA OFICIAL DEL CLUB ATLETICO BOCA JUNIORS"  ></a><!--Esta "a" sirve para generar hipervinculos.-->
-</footer>
+  </nav>
+  
+  <div class="Titulo">
+    <h1>Tango Consulting Group</h1>
+  </div>
 
-     
+  <!-- Contenido main -->
+ <section id="servicios">
+
+  <div class="services-section"> 
+    <h2>Nuestros Servicios</h2>
+    <div class="service-images">
+      <div class="service-item">
+        <p>Asesoría financiera</p>
+        <img src="images/asesoria financera2.jpg" alt="Asesoria financiera">   
+      </div>
+      <div class="service-item">
+        <p>Automatización de procesos</p>
+        <img src="images/automatización de procesos.jpg" alt="Automatizacion de procesos">   
+      </div>
+      <div class="service-item">
+        <p>Data & Analytics</p>
+        <img src="images/data and analytics.webp" alt="Data and analytics">   
+      </div>
+      <div class="service-item">
+        <p>Growth hacking</p>
+        <img src="images/Growth-hacker.avif" alt="Growth hacking">   
+      </div>
+      <div class="service-item">
+        <p>E-commerce</p>
+        <img src="images/ecommerce.jpg" alt="E commerce">   
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section id="contacto">
+ <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Información de Contacto</h3>
+          <ul class="contact-info">
+            <li>
+              <strong>Teléfono:</strong> 4792-9386
+            </li>
+            <li>
+              <strong>Email:</strong> info@tangoconsulting.com
+            </li>
+            <li>
+              <strong>Dirección:</strong> Iguazu 341, CABA
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Clientes</h3>
+          <div class="client-logos">
+            <img src="images/techint.png" alt="Techint">
+            <img src="images/Unilevef logo.svg" alt="Unilever">
+            <img src="images/MercadoLibre-logo.png" alt="Mercado Libre">
+            <img src="images/Arcorr.jpg" alt="Arcor">
+            <img src="images/mercedes.webp" alt="Mercedes">
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="script.js"></script>
-</html
+</html>
