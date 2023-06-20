@@ -1,9 +1,101 @@
 
 
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.section-1 {
+	background: url(images/Fondo.jpg);
+	width: 100%;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+}
+header {
+	display: flex;
+	padding: 30px;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: 500ms;
+}
+nav {
+	margin-right: 70px;
+}
+nav a {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #eee;
+	text-transform: uppercase;
+	border-bottom:  3px solid transparent;
+	padding: 10px 1px;
+	transition: 200ms;
+}
+.active {
+	border-color: #00B3FF;
+}
+nav a:hover {
+	border-color: #00B3FF;
+}
+.TCG {
+	flex: 1;
+	font-size: 35px;
+	font-family: sans-serif;
+	margin-left: 70px;
+	color: #fff;
+}
+.bgc {
+	background: #eee;
+	padding: 10px;
+}
+.bgc .TCG {
+	font-size: 30px;
+	color: #000;
+}
+.bgc nav a {
+	color: #000000;
+}
+
+
+.section-2 {
+	padding: 20px;
+	padding-left: 60px;
+}
+.section-2 h1 {
+	padding: 20px;
+	font-size: 40px;
+}
+.section-2 p {
+	padding: 20px;
+	line-height: 1.8em;
+	font-size: 18px;
+}
+@media (max-width: 769px){
+	header {
+		flex-direction: column;
+		padding: 20px;
+	}
+	nav {
+		padding: 15px;
+		margin: 0px;
+	}
+}
+
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+   background-color: #000000;
+  color: #fff;
 }
 .Titulo {
   background-image: url(images/Fondo.jpg);
@@ -16,12 +108,6 @@ body {
 .Titulo h1 {
   font-size: 60px;
   color: white;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 .services-section img{
@@ -90,44 +176,70 @@ body {
 }
 
 footer {
-  background-color: #f2f2f2;
+  background-color: #171717;
+  color: #fff;
   padding: 20px;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 h2 {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-form {
+.form-group {
   margin-bottom: 20px;
 }
 
-label, input, textarea {
+label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-input, textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #280000;
+  color: #fff;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #280000;
   border: none;
-  cursor: pointer;
+  color: #eee;
 }
 
 #mensajeEnviado {
   margin-top: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #000000;
   padding: 10px;
+  text-align: center;
+}
+
+
+.contador {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #343434;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  font-size: 36px;
 }
