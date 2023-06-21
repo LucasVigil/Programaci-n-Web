@@ -24,13 +24,17 @@ document.getElementById("formularioContacto").addEventListener("submit", functio
 
 function countdown() {
   var now = new Date();
-  var openingTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 9, 30, 0); // Establece la hora de apertura a las 9:30 AM porque son 2 horas mas que aca.
+  var openingTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 9, 30, 0); // Establece la hora de apertura a las 9:30 AM de aca, que serian las 8.30 de nueva york
   var closingTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 16, 0, 0); // Establece la hora de cierre a las 4:00 PM 
 
   var diff;
 
   if (now >= openingTime && now <= closingTime) {
     // Mercado abierto: calcular tiempo restante hasta el cierre
+    setTimeout(function() {
+      document.getElementById("cierre").style.display = "block";
+      document.getElementById("apertura").style.display = "none";
+    })
     diff = closingTime - now;
     document.body.style.backgroundColor = "#222";
     document.body.style.color = "#fff";
@@ -39,6 +43,10 @@ function countdown() {
     //esto funciona como el elif de python
     if (now < openingTime) {
       diff = openingTime - now;
+      setTimeout(function() {
+        document.getElementById("apertura").style.display = "block";
+        document.getElementById("cierre").style.display = "none";
+      })
     } else {
       openingTime.setDate(openingTime.getDate() + 1); // Calcula próxima apertura para tirar el tiempo hasta el dia siguiente.
       diff = openingTime - now;
@@ -47,11 +55,7 @@ function countdown() {
     document.body.style.color = "#fff";
   }
 
-  if (diff < 0) {
-    // Los mercados ya han abierto o cerrado
-    document.getElementById("countdown").innerHTML = "Los mercados ya han abierto o cerrado";
-    return;
-  }
+ 
  //creando estas variables con este formato se hace que aparezcan las horas, despues los mins y despues los segundos.
   var hours = Math.floor(diff / (1000 * 60 * 60));
   var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
