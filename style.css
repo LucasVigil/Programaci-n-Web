@@ -81,10 +81,12 @@ nav a:hover {
 	header {
 		flex-direction: column;
 		padding: 20px;
+    width: 100%;
 	}
 	nav {
 		padding: 15px;
 		margin: 0px;
+    width: 100%;
 	}
 }
 
