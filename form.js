@@ -31,6 +31,7 @@ function countdown() {
 
   if (now >= openingTime && now <= closingTime) {
     // Mercado abierto: calcular tiempo restante hasta el cierre
+    //Uso la misma funcion que uso en el formulario , pero esta vez para hacer que aparezca o desaparenzcan los h que dicen si el contador esta contando para la apertura o para el cierre.
     setTimeout(function() {
       document.getElementById("cierre").style.display = "block";
       document.getElementById("apertura").style.display = "none";
@@ -43,7 +44,7 @@ function countdown() {
     //esto funciona como el elif de python
     if (now < openingTime) {
       diff = openingTime - now;
-      setTimeout(function() {
+      setTimeout(function() { //Uso la misma funcion que uso en el formulario , pero esta vez para hacer que aparezca o desaparenzcan los h que dicen si el contador esta contando para la apertura o para el cierre.
         document.getElementById("apertura").style.display = "block";
         document.getElementById("cierre").style.display = "none";
       })
